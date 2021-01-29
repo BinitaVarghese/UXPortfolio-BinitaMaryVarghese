@@ -286,6 +286,7 @@ svg {
 }
 
 /* .column .button */
+.about .button,
 #project_wordsup .button,
 #project_askaway .button {
   display: block;
