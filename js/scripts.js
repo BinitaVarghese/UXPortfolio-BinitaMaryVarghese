@@ -8,10 +8,25 @@ function menuToggle () {
   }
 }
 
+function s () {
+  var x = document.getElementById('myImgtoggle')
+  if (x.className === 'showimage1') {
+    x.className = 'showimage2'
+  } else {
+    x.className = 'showimage1'
+  }
+}
+
 function setToggle () {
   var x = document.getElementById('myNavtoggle')
   x.className = 'navtoggle'
 }
+
+function setImgToggle () {
+  var y = document.getElementById('myImgToggle')
+  y.className = ''
+}
+
 
 //Get the button:
 var mybutton = document.getElementById("myBtn");

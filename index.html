@@ -14,8 +14,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <script src="https://kit.fontawesome.com/4c37062268.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&Open+Sans&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link href="img/profile/favicon.ico" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&Open+Sans&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap&family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="img/file/favicon.ico" rel="shortcut icon">
 
 </head>
 
@@ -26,7 +26,7 @@
       <a href="index.html" id="logo"> Binita Mary Varghese <br><span class="subhead"> UX DESIGNER</span></a>
       <nav>
         <ul>
-        <li><a href="index.html"> Projects </a></li>
+        <li><a href="#worklist"> Case Studies </a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="#contactme" onclick="setToggle()">Contact</a></li>
         <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"> <i class="fas fa-bars"></i></a></li>
@@ -39,65 +39,56 @@
     <!-- Main section 1 - Hero -->
     <div class="section" id="intro">
       <div class="container">
-        <div class="row lessons">
-          <h3>"I believe in designing solutions for real world problems - <br>to enable people to enjoy the experience of using the products."
+        <div class="row">
+          <h3>"Crafting solutions for real world issues while providing an intuitive experience."
           </h3>
         </div>
-
       </div>
     </div>
 
-    <!-- Main section 2 - Work/Projects -->
+    <!-- Main section 2 - Work/jects -->
     <div class="section" id="worklist">
-        <h2>MY PROJECTS </h2>
+        <h2>MY CASE STUDIES </h2>
         <div class="container">
-          <div class="row">
-            <!--1st project -->
-            <div class="column col-med-6 col-large-4">
-              <!--1st column -->
-              <picture >
+
+          <div class="row lastrow " id="myImgToggle">
+            <div class="column col-med-5 col-large-4 showimage">
+              <picture class="image1" >
                 <source srcset="img/AskAway/AA_homepage_600.jpg" media="(max-width:767px)">
                 <img src="img/AskAway/AA_homepage_1200.jpg" alt="AskAway">
               </picture>
-            </div>
-            <!--end of 1st column -->
-            <div class="column col-med-6 col-large-8">
-              <!-- 2nd column-->
-              <h3>Askaway</h3>
-              <p>An end to end design concept. Users can connect easily and conveniently with experts on a wide range of topics.
-              </p>
-              <p>ROLE: UX DESIGNER</p>
-              <a href="askaway.html" class="button" onclick="BtnClick()">View Case Study</a>
-            </div>
-            <!--end of 2nd column -->
-          </div>
-          <!--end of 1st row -->
 
-          <div class="row lastrow">
-            <!--2nd project -->
-            <div class="column col-med-6-right col-large-4-right">
-              <!--1st column -->
-              <picture >
+              <a href="askaway.html">
+                <picture class="image2">
+                  <source srcset="img/AskAway/AA_homepage_hover_600.jpg" media="(max-width:767px)">
+                    <img src="img/AskAway/AA_homepage_hover_1200.jpg" alt="AskAway">
+                </picture>
+              </a>
+
+            </div>
+
+            <div class="column col-med-5 col-large-4 showimage">
+              <picture class="image1" >
                 <source srcset="img/WordsUp/WU_homepage_600.jpg" media="(max-width:767px)">
                 <img src="img/WordsUp/WU_homepage_1200.jpg" alt="WordsUp">
               </picture>
-            </div>
-            <!--end of 1st column -->
-            <div class="column col-med-6-left col-large-8-left">
-              <!-- 2nd column-->
-              <h3>WordsUp</h3>
-              <p>A low fidelity design cycle. Users can learn vocabulary and usage in short lessons.
-              </p>
-              <p>ROLE: UX DESIGNER</p>
-              <a href="wordsup.html" class="button" onclick="BtnClick()">View Case Study</a>
-            </div>
-            <!--end of 2nd column -->
-          </div>
-          <!--end of 1st row -->
 
-                <!-- end of 2nd row -->
-      </div>
-      <!--end of class - container -->
+              <a href="wordsup.html">
+                <picture class="image2">
+                  <source srcset="img/WordsUp/WU_homepage_hover_600.jpg" media="(max-width:767px)">
+                  <img src="img/WordsUp/WU_homepage_hover_1200.jpg" alt="WordsUp">
+                </picture>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
     </div>
     <!--end of class - section work -->
 
@@ -108,7 +99,7 @@
       <div class="container">
       <div class="row lastrow">
         <div class="column">
-          <h2>Lets work together..</h2>
+          <h2>Get in touch. Let's work together...</h2>
         </div>
         <div class="column social">
           <a href="https://www.linkedin.com/in/binita-mary-varghese-3a460491/" target="_blank">

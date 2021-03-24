@@ -3,7 +3,12 @@
 /*
 Colors used:
 #a3b4c8   #CC6D3D   #b74803
-#022e51   #000000   #fff   */
+#022e51   #000000   #fff
+b784a7
+
+  eae7dc  eggshell cream
+e85a4f orange
+*/
 
 * {
   box-sizing: border-box;
@@ -13,9 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+
 header {
-  background-color: #a3b4c8;
-  color: #fff;
+  background-color: #eae7dc;
+  color: #000;
   padding: 20px 10px 10px;
   display: inline-block;
   width: 100%;
@@ -31,17 +37,19 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.8;
-  color: #022e51;
+  /*color: #022e51; */
+  color: black;
 }
 
 footer {
   display: inline-block;
-  background-color: #a3b4c8;
+  background-color: #fff;
   color: #000;
   padding: 0;
   text-align: center;
   width: 100%;
   opacity: 90%;
+  border-top: 2px solid #eae7dc;
 }
 
 .container {
@@ -53,7 +61,8 @@ footer {
 h1,
 h2,
 h3{
-  font-family: 'Playfair Display', serif;
+  /*font-family: 'Playfair Display', serif; */
+  font-family: 'Roboto Slab', serif;
 }
 
 h4{
@@ -74,7 +83,8 @@ h4{
 a,
 a:visited {
   background-color: transparent;
-  color: #022e51;
+  /*color: #022e51;*/
+  color: black;
   text-decoration: none;
 }
 
@@ -86,7 +96,8 @@ a:focus {
 
 a:active {
   background-color: transparent;
-  color: #022e51;
+  /*color: #022e51;*/
+  color: black;
 }
 
 #logo,
@@ -96,13 +107,13 @@ a:active {
   font-weight: 500;
   line-height: 1.4;
   text-align: left;
-  color: #022e51;
+  color: #000;
   background-color: transparent;
 }
 
 #logo:hover,
 #logo:focus {
-  color: #fff;
+  color: #e85a4f;
   background-color: transparent;
 }
 
@@ -114,7 +125,7 @@ a:active {
 }
 
 .subhead {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.6em;
   font-weight: normal;
 }
@@ -137,12 +148,12 @@ nav > ul > li > a:visited, {
   text-transform: none;
   text-decoration: none;
   font-weight: 700;
-  color: #022e51;
+  color: #000;
   background-color: transparent;
 }
 
 nav > ul > li > a ::before {
-  color: #022e51;
+  color: #000;
   background-color: transparent;
 }
 
@@ -150,7 +161,7 @@ nav > ul > li > a:hover,
 nav > ul > li > a.focus,
 nav > ul > li > a:active {
   background-color: transparent;
-  color: #fff;
+  color: #e85a4f;
 }
 
 .responsive,
@@ -161,6 +172,29 @@ nav > ul > li > a:active {
 
 .navtoggle li:not(:last-child) {
   display: none;
+}
+
+.image2 {
+  display: none;
+}
+
+.showimage{
+  width: 80%;
+  padding-left: 50px;
+  padding-bottom: 20px;
+
+}
+
+.showimage:hover .image1{
+  display:none;
+}
+
+.showimage:hover .image2{
+  display:inline-block;
+}
+
+#worklist img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
@@ -179,13 +213,14 @@ h2 {
   font-size: 1.4em;
   font-weight: 600;
   text-align: center;
-  color: #022e51;
+  /*color: #022e51;*/
+  color:black;
   /*background-color: #a3b4c8;*/
   padding: 0 15px;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 300;
 }
 
@@ -198,6 +233,7 @@ h4 {
 
 .contact h2 {
   font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 10px;
@@ -223,16 +259,18 @@ svg {
 
 #intro,
 .about h1 {
-  background-color: #fff;
-  color: #022e51;
+  background-color: #FFFFFF;
+  color: #000;
   padding: 40px 0 20px;
+  font-size: 1em;
   text-align: center;
 }
+
 
 .skills h2 {
   width: 100%;
   padding: 10px 0;
-  color: #022e51;
+  color: black;;
   background-color: transparent;
   text-decoration: underline;
   border-top: 1px solid black;
@@ -241,7 +279,7 @@ svg {
 .row {
   margin: 25px 0;
   padding-bottom: 40px;
-  border-bottom: 2px solid #b74803;
+  border-bottom: 2px solid #e85a4f;
 }
 
 
@@ -271,12 +309,14 @@ svg {
 }
 
 #worklist h1 {
-  color: #022e51;
+  color: #000;
   text-align: center;
+  position: relative;
+    top: 200px;
 }
 
 .button {
-  background-color: #b74803;
+  background-color: #000;
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff; /* needed to override the default link color */
@@ -301,9 +341,11 @@ svg {
 
 .button:hover,
 .button:focus {
-  background-color: #b74803;
+  background-color: #eae7dc;
+  color: #e85a4f;
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .button:active {
@@ -314,9 +356,9 @@ svg {
 
 .button.contact {
   background-color: transparent;
-  color: #b74803;
+  color: #000;
   text-transform: lowercase;
-  border: 2px solid #b74803;
+  border: 2px solid #b784a7;
 }
 
 .button.contact:hover {
@@ -364,7 +406,7 @@ svg {
   }
 
   #intro .row {
-    padding: 40px 0 20px;
+    padding: 100px 0 100px;
   }
 
   #wu_welcome .row,
@@ -392,7 +434,7 @@ svg {
   }
 
   body {
-    font-size: 18px; /* Sets the font size to 18px */
+    font-size: 16px; /* Sets the font size to 16px */
   }
 
   #worklist img {
@@ -522,6 +564,7 @@ svg {
 
   .container {
     padding: 0 45px;
+    transition: transform 1s;
   }
 
   #project_wordsup .container,
@@ -554,7 +597,7 @@ svg {
   }
 
   #intro {
-    padding: 90px 0 20px;
+    padding: 40px 0 20px;
   }
 
   #aa_intro .row {
@@ -562,7 +605,7 @@ svg {
   }
 
   body {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   #worklist img {
@@ -731,14 +774,14 @@ svg {
   }
 
   #intro {
-    padding: 90px 0 20px;
+    padding: 40px 0 20px;
   }
 
   #aa_intro .row {
     padding: 100px 0 20px;
   }
   body {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   #worklist img {
